@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TodoModel } from 'src/app/models/todo.model';
-import { mockTodoList } from '../todo.constant';
+import { mockTodoList } from '../../constants/todo.constant';
 
 @Component({
   selector: 'app-todo-list',
@@ -14,7 +14,7 @@ export class TodoListComponent {
 
   submitTodo() {
     if (!this.newTodoItem) return;
-    
+
     this.todoItems = this.todoItems.concat({
       id: this.todoItems.length,
       title: this.newTodoItem,

@@ -1,6 +1,4 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { mockTodoList } from './components/todo.constant';
-import { TodoModel } from './models/todo.model';
 
 @Component({
   selector: 'app-root',
