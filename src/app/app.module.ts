@@ -3,14 +3,36 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms';
+import { TimeGreetingPipe } from './pipes/time-greeting.pipe';
+import { UserInputComponent } from './components/user-input/user-input.component';
+import { GreetingComponent } from './components/greeting/greeting.component';
+import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { TaskCompletedDirective } from './directives/task-completed.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TimeGreetingPipe,
+    UserInputComponent,
+    GreetingComponent,
+    TodoListComponent,
+    TaskCompletedDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    FormsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

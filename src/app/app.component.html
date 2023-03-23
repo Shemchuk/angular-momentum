@@ -1,1 +1,12 @@
-<!-- ng add @angular/material -->
+<div class="content-wrapper">
+  <app-user-input (submitUser)="submitUserName($event)"></app-user-input>
+
+  <div *ngIf="userNameSubmitted">
+    <app-greeting [currentName]="currentName"></app-greeting>
+    <app-todo-list></app-todo-list>
+  </div>
+
+  <ng-template [ngIf]="true">
+
+  </ng-template>
+</div>
